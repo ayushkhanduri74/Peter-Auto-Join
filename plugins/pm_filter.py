@@ -120,7 +120,7 @@ async def next_page(bot, query):
     else:
         if settings['button']:
             btn = [[
-                    InlineKeyboardButton(text=f"❄[{get_size(file.file_size)}]✨{file.file_name}", callback_data=f'files#{file.file_id}')] for file in files ]
+                    InlineKeyboardButton(text=f"❄[{get_size(file.file_size)}]✨{file.file_name}", callback_data=f'files#{file.file_id}'),] for file in files ]
         else:
             btn = [[
                     InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'files#{file.file_id}'),
@@ -1270,7 +1270,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         if settings["button"]:
             btn = [[
-                    InlineKeyboardButton(text=f"❄[{get_size(file.file_size)}]✨{file.file_name}", callback_data=f'{pre}#{file.file_id}')] for file in files ]
+                    InlineKeyboardButton(text=f"❄[{get_size(file.file_size)}]✨{file.file_name}", callback_data=f'{pre}#{file.file_id}'),] for file in files ]
         else:
             btn = [[
                     InlineKeyboardButton(text=f"{file.file_name}",callback_data=f'{pre}#{file.file_id}',),
