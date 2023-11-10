@@ -8,14 +8,13 @@ class script(object):
 
 # ⚠️ Please don't change our credits 👇🏻
 
-    ABOUT_TXT = """<b>✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/TGxMATRIX>𝙼𝙰𝚃𝚁𝙸𝚇</a>
-✯ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂: <a href=https://t.me/MLZ_BOTZ>𝙼𝙻𝚉_𝙱𝙾𝚃𝚉</a>
+    ABOUT_TXT = ""✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
+✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/master793bot>𝗠𝗮𝘀𝘁𝗲𝗿𝟳𝟵𝟯</a>
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙺𝙾𝚈𝙴𝙱
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v2.0.1 [ 𝙱𝙴𝚃𝙰 ]</b>"""
+✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: KOYEB
+✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
 
     
     MANUELFILTER_TXT = """Help: <b>Filters</b>
@@ -75,7 +74,7 @@ class script(object):
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of 𝙿𝙴𝚃𝙴𝚁
+these are the extra features 
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specified user.</code>
@@ -91,8 +90,7 @@ these are the extra features of 𝙿𝙴𝚃𝙴𝚁
 
 ⏭️ /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
 
-<b>𝚆𝙾𝚁𝙺𝚂 𝙱𝙾𝚃𝙷 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙿𝙼</b>
-@MLZ_BOTZ"""
+<b>𝚆𝙾𝚁𝙺𝚂 𝙱𝙾𝚃𝙷 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙿𝙼</b>"""
 
     VIDEO_TXT ="""𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴.
 • 𝘜𝘴𝘢𝘨𝘦
@@ -141,7 +139,7 @@ Do as you wish with telegra.ph module!
 ➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
 ➪ /audiobook: 𝖱𝖾𝗉𝗅𝗒 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗍𝗈 𝖺𝗇𝗒 𝖯𝖣𝖥 𝗍𝗈 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾 𝗍𝗁𝖾 𝖺𝗎𝖽𝗂𝗈"""
 
-    DEPLOY_TXT= """𝙸𝙵 𝚈𝙾𝚄 𝙵𝙰𝙲𝙸𝙽𝙶 𝙰𝙽𝚈 𝙸𝚂𝚂𝚄𝙴 𝙸𝙽 𝚃𝙷𝙴 𝚁𝙴𝙿𝙾 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝙴..."""
+    # DEPLOY_TXT= """𝙸𝙵 𝚈𝙾𝚄 𝙵𝙰𝙲𝙸𝙽𝙶 𝙰𝙽𝚈 𝙸𝚂𝚂𝚄𝙴 𝙸𝙽 𝚃𝙷𝙴 𝚁𝙴𝙿𝙾 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝙴..."""
    
     PINGS_TXT = """<b>Ping Testing:</b>
 Helps you to know your ping 🚶🏼‍♂️
@@ -170,8 +168,7 @@ To Get Sticker ID
 
 <b>COMMAND</b> : /font your text (optional)
         <b> Eg:- /font Hello</b>
-
- <i>This feature added by @MLZ_BOTZ"""
+"""
     JSON_TXT = """<b>JSON:</b>
 Bot returns json for all replied messages with /json or /js
 <b>Features:</b>
@@ -193,15 +190,15 @@ Note:- <b>Give a user details</b>
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 <code>/short https://youtu.be/example...</code>"""
 
-    FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
+#     FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
     
-<b>⚡ 𝙹𝚄𝚂𝚃 𝚂𝙾𝙼𝙴 𝙺𝙸𝙽𝙳 𝙾𝙵 𝙵𝚄𝙽 𝚃𝙷𝙸𝙽𝙶'𝚂 ⚡</b>
+# <b>⚡ 𝙹𝚄𝚂𝚃 𝚂𝙾𝙼𝙴 𝙺𝙸𝙽𝙳 𝙾𝙵 𝙵𝚄𝙽 𝚃𝙷𝙸𝙽𝙶'𝚂 ⚡</b>
  
-𝟣. /dice - 𝚁𝙾𝙻𝙴 𝚃𝙷𝙴 𝙳𝙸𝙲𝙴 
-𝟤. /Throw 𝗈𝗋 /Dart - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙳𝙰𝚁𝚃 
-3. /Runs - 𝚂𝙾𝙼𝙴 𝚁𝙰𝙽𝙳𝙾𝙼 𝙳𝙸𝙰𝙻𝙾𝙶𝚄𝙴𝚂 
-4. /Goal or /Shoot - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙰 𝙶𝙾𝙰𝙻 𝙾𝚁 𝚂𝙷𝙾𝙾𝚃
-5. /luck or /cownd - 𝚂𝙿𝙸𝙽 𝙰𝙽𝙳 𝚃𝚁𝚈 𝚈𝙾𝚄𝚁 𝙻𝚄𝙲𝙺"""
+# 𝟣. /dice - 𝚁𝙾𝙻𝙴 𝚃𝙷𝙴 𝙳𝙸𝙲𝙴 
+# 𝟤. /Throw 𝗈𝗋 /Dart - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙳𝙰𝚁𝚃 
+# 3. /Runs - 𝚂𝙾𝙼𝙴 𝚁𝙰𝙽𝙳𝙾𝙼 𝙳𝙸𝙰𝙻𝙾𝙶𝚄𝙴𝚂 
+# 4. /Goal or /Shoot - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙰 𝙶𝙾𝙰𝙻 𝙾𝚁 𝚂𝙷𝙾𝙾𝚃
+# 5. /luck or /cownd - 𝚂𝙿𝙸𝙽 𝙰𝙽𝙳 𝚃𝚁𝚈 𝚈𝙾𝚄𝚁 𝙻𝚄𝙲𝙺"""
 
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
@@ -235,7 +232,7 @@ This module only works for my admins
 ★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
 ★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
 ★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱</b
- Bʏ @MLZ_BOTZ>"""
+ """
 
     CARB_TXT = """<b>Help</b> : 𝗖𝗔𝗥𝗕𝗢𝗡
 𝙲𝙰𝚁𝙱𝙾𝙽 𝙸𝚂 𝙰 𝙵𝙴𝚄𝚃𝚄𝚁𝙴 𝚃𝙾 𝙼𝙰𝙺𝙴 𝚃𝙷𝙴 𝙸𝙼𝙰𝙶𝙴 𝙰𝚂 𝚂𝙷𝙾𝚆𝙽 𝙸𝙽 𝚃𝙷𝙴 𝚃𝙾𝙿 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁𝙴 𝚃𝙴𝚇𝚃𝚂.
@@ -265,11 +262,6 @@ Name - {}
 
 <code>{}</code>
 
-⚠️ <b>This file will be deleted from here within 10 minute as it has copyright ... !!!</b>
-
-<b>കോപ്പിറൈറ്റ് ഉള്ളതുകൊണ്ട് ഫയൽ 10 മിനിറ്റിനുള്ളിൽ ഇവിടെനിന്നും ഡിലീറ്റ് ആകുന്നതാണ് അതുകൊണ്ട് ഇവിടെ നിന്നും മറ്റെവിടെക്കെങ്കിലും മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക!</b>
-
-<b>© Powered by {}</b>
 """
     SUR_TXT = """
 <b>
@@ -279,22 +271,11 @@ Name - {}
 """
 
     IMDB_TEMPLATE_TXT = """
-<b>⍞ 𝗧𝗶𝘁𝗹𝗲</b> : <b><i><a href={url}>{title}</a></i></b><b>
-
-⌗ 𝗚𝗲𝗻𝗿𝗲𝘀</b> :<b><i>{genres}</i></b><b>
-★ 𝗥𝗮𝘁𝗶𝗻𝗴</b> : <b><i><a href={url}/ratings>{rating}</a> / 10 (ʙᴀsᴇᴅ ᴏɴ {votes} ᴜsᴇʀ ʀᴀᴛɪɴɢ.)</i></b><b>
-
-〄 𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝗱</b> : <b><i>{release_date}</i></b><b>
-⌬ 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲𝘀</b> : <b><i>{languages}</i></b><b>
-⛤ 𝗖𝗼𝘂𝗻𝘁𝗿𝗶𝗲𝘀</b> : <b><i>{countries}</i></b><b>
-⎙ 𝗦𝘁𝗼𝗿𝘆 𝗟𝗶𝗻𝗲</b> : <code>{plot}</code><b>
-
+<b>🧿 ᴛɪᴛᴛʟᴇ :  {title} \n🌟 ʀᴀᴛɪɴɢ : {rating} \n🎭 ɢᴇɴʀᴇ : {genres} \n📆 ʀᴇʟᴇᴀsᴇ : {year} \n🎊 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒</b> [[𝐌𝐀𝐒𝐓𝐄𝐑𝟕𝟗𝟑]](t.me/master793)
 ★Requested by</b> : {message.from_user.mention}
 """
 
-    CUSTOM_FILE_CAPTION = """<b>FILE : <code>{file_name}</code>
-    
-    @MLZ_BOTZ</b>"""
+    CUSTOM_FILE_CAPTION = """📂 <b>File Name</b>: <code>{file_name}</code> \n\n❤️‍🔥 <b>Join</b> [𝐌𝐀𝐒𝐓𝐄𝐑𝟕𝟗𝟑](https://t.me/master793)"""
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
@@ -324,9 +305,7 @@ Name - {}
     I_CUD_NT = """ʜᴇʟʟᴏ {} ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.ᴄʜᴇᴄᴋ ʏᴏᴜʀ ꜱᴘᴇʟʟɪɴɢ."""
     
     CUDNT_FND = """ʜᴇʟʟᴏ {} ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?"""
-
-    REPRT_MSG = """ Join our group ask movies there
-    <code>[JOIN GROUP](buttonurl:https://t.me/Mowie_world)</code>"""
+"""
 
     CON_TXT = """<b><u>ᴄᴏᴜɴᴛʀʏ ɪɴғᴏ</b></u>
 <b>Tʜɪs ᴍᴏᴅᴜʟᴇ ɪs ᴛᴏ ғɪɴᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄᴏᴜɴᴛʀɪᴇs</b>
@@ -357,9 +336,8 @@ Name - {}
 ➪ /pbatch ›› <b>𝚄𝚂𝙴 𝚈𝙾𝚄𝚁 𝙼𝙴𝙳𝙸𝙰 𝙻𝙸𝙽𝙺 𝚆𝙸𝚃𝙷 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳.</b>
 ➪ /batch ›› <b>𝚃𝙾 𝙲𝚁𝙴𝙰𝚃𝙴 𝙻𝙸𝙽𝙺 𝙵𝙾𝚁 𝙼𝚄𝙻𝚃𝙸𝙿𝙻𝙴 𝙵𝙸𝙻𝙴𝚂.</b>
 ⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
-<code>/batch https://t.me/MatRixBotzTG https://t.me/MatRixBotzTG</code>
-
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/MatRixBotzTG><b>𝗠𝗮𝘁𝗥𝗶𝘅𝗕𝗼𝘁𝘇𝗧𝗚</b></a>"""
+<code>/batch https://t.me/master793 https://t.me/master793</code>
+"""
     NORSLTS = """
 ★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
 
