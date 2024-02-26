@@ -2,20 +2,6 @@
 # -*- coding: utf-8 -*-
 # (c) @AlbertEinsteinTG
 
-import asyncio
-from pyrogram import Client, enums
-from pyrogram.errors import FloodWait, UserNotParticipant
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
-
-from database.join_reqs import JoinReqs
-from info import REQ_CHANNEL, AUTH_CHANNEL, JOIN_REQS_DB, ADMINS
-
-from logging import getLogger
-
-logger = getLogger(__name__)
-INVITE_LINK = None
-db = JoinReqs
-
 async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="checksub"):
 
     global INVITE_LINK
@@ -34,7 +20,6 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
 
     # Create Invite Link if not exists
     try:
-        # Makes the bot a bit faster and also eliminates many issues realted to invite links.
         if INVITE_LINK is None:
             invite_link = (await bot.create_chat_invite_link(
                 chat_id=(int(AUTH_CHANNEL) if not REQ_CHANNEL and not JOIN_REQS_DB else REQ_CHANNEL),
@@ -59,7 +44,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         )
         return False
 
-    # Mian Logic
+    # Main Logic
     if REQ_CHANNEL and db().isActive():
         try:
             # Check if User is Requested to Join Channel
@@ -78,6 +63,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
     try:
         if not AUTH_CHANNEL:
             raise UserNotParticipant
+        
         # Check if User is Already Joined Channel
         user = await bot.get_chat_member(
                    chat_id=(int(AUTH_CHANNEL) if not REQ_CHANNEL and not db().isActive() else REQ_CHANNEL), 
@@ -98,11 +84,14 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
     except UserNotParticipant:
         text="""**Cʟɪᴄᴋ " 📢 𝐉𝐨𝐢𝐧 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 📢 " Tʜᴇɴ Cʟɪᴄᴋ " 🔄 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔄 " Bᴏᴛᴛᴏɴ Tʜᴇɴ Yᴏᴜ Wɪʟʟ Gᴇᴛ Yᴏᴜʀ Mᴏᴠɪᴇ**"""
 
-        buttons = [[
+        buttons = [
+            [
                 InlineKeyboardButton("📢 𝐉𝐨𝐢𝐧 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 📢", url=invite_link)
-            ],[
-                InlineKeyboardButton("🔄 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔄", callback_data=f"{mode}#{file_id}")
-            ]]
+            ],
+            [
+                InlineKeyboardButton("🔄 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔄", callback_data=f"retry#{file_id}")
+            ]
+        ]
 
         if file_id is False:
             buttons.pop()
@@ -130,7 +119,3 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         )
         return False
 
-
-def set_global_invite(url: str):
-    global INVITE_LINK
-    INVITE_LINK = url
