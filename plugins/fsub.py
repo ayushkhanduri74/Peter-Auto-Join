@@ -13,6 +13,7 @@ INVITE_LINK = None
 db = JoinReqs
 
 async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="checksub"):
+
     global INVITE_LINK
     auth = ADMINS.copy() + [1125210189]
     if update.from_user.id in auth:
@@ -27,9 +28,9 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         update = update.message
         is_cb = True
 
-# Create invit link if not exits
-
+    # Create Invite Link if not exists
     try:
+        # Makes the bot a bit faster and also eliminates many issues realted to invite links.
         if INVITE_LINK is None:
             invite_link = (await bot.create_chat_invite_link(
                 chat_id=(int(AUTH_CHANNEL) if not REQ_CHANNEL and not JOIN_REQS_DB else REQ_CHANNEL),
@@ -54,8 +55,10 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         )
         return False
 
+    # Mian Logic
     if REQ_CHANNEL and db().isActive():
         try:
+            # Check if User is Requested to Join Channel
             user = await db().get_user(update.from_user.id)
             if user and user["user_id"] == update.from_user.id:
                 return True
@@ -71,7 +74,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
     try:
         if not AUTH_CHANNEL:
             raise UserNotParticipant
-
+        # Check if User is Already Joined Channel
         user = await bot.get_chat_member(
                    chat_id=(int(AUTH_CHANNEL) if not REQ_CHANNEL and not db().isActive() else REQ_CHANNEL), 
                    user_id=update.from_user.id
@@ -89,11 +92,13 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         else:
             return True
     except UserNotParticipant:
-        text = """**Click "📢 Join Request Channel 📢" then click "🔄 Try Again 🔄" button to join the channel and try again.**"""
-        buttons = [
-            [InlineKeyboardButton("📢 Join Request Channel 📢", url=invite_link)],
-            [InlineKeyboardButton("🔄 Try Again 🔄", callback_data=f"{mode}#{file_id}")]
-        ]
+        text="""**Cʟɪᴄᴋ " 📢 𝐉𝐨𝐢𝐧 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 📢 " Tʜᴇɴ Cʟɪᴄᴋ " 🔄 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔄 " Bᴏᴛᴛᴏɴ Tʜᴇɴ Yᴏᴜ Wɪʟʟ Gᴇᴛ Yᴏᴜʀ Mᴏᴠɪᴇ**"""
+
+        buttons = [[
+                InlineKeyboardButton("📢 𝐉𝐨𝐢𝐧 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 📢", url=invite_link)
+            ],[
+                InlineKeyboardButton("🔄 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔄", callback_data=f"{mode}#{file_id}")
+            ]]
 
         if file_id is False:
             buttons.pop()
